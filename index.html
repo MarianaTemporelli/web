@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariana Temporelli | Abogada especialista en Derecho Previsional</title>
+  <meta name="description" content="Mariana Temporelli, abogada especialista en Derecho Previsional en Bahía Blanca. Planificación jubilatoria, jubilaciones, pensiones y análisis de historias laborales.">
+  <meta name="keywords" content="Mariana Temporelli, abogada previsional, planificación jubilatoria, jubilaciones, pensiones, Bahía Blanca">
+
+  <!-- Open Graph para vista previa en WhatsApp y redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mariana Temporelli | Abogada especialista en Derecho Previsional">
+  <meta property="og:description" content="Planificación jubilatoria y gestión de trámites previsionales en Bahía Blanca.">
+  <meta property="og:image" content="marianatempo.png">
+
+  <style>
+    :root{
+      --ink:#243238;
+      --muted:#657277;
+      --cream:#f7f4ef;
+      --paper:#fffdf9;
+      --accent:#9a6b52;
+      --accent-dark:#79503d;
+      --line:#e7dfd7;
+      --soft:#efe7df;
+      --white:#ffffff;
+      --shadow:0 18px 45px rgba(36,50,56,.09);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.65;
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:auto;padding:0 28px}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(255,253,249,.94);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+    }
+    .brand{
+      font-family:Georgia, 'Times New Roman', serif;
+      font-size:22px;letter-spacing:.02em;font-weight:700;
+    }
+    nav{display:flex;gap:24px;font-size:14px}
+    nav a{text-decoration:none;color:var(--muted)}
+    nav a:hover{color:var(--accent-dark)}
+    .hero{
+      background:
+        radial-gradient(circle at 85% 20%, rgba(154,107,82,.12), transparent 28%),
+        linear-gradient(135deg,var(--cream),var(--paper));
+      padding:86px 0 78px;
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;
+    }
+    .eyebrow{
+      text-transform:uppercase;letter-spacing:.16em;font-size:12px;
+      color:var(--accent-dark);font-weight:700;margin-bottom:18px;
+    }
+    h1,h2,h3{font-family:Georgia, 'Times New Roman', serif;font-weight:600;line-height:1.12}
+    h1{font-size:clamp(44px,6vw,76px);margin:0 0 22px}
+    .hero h1 span{display:block;color:var(--accent-dark)}
+    .lead{font-size:21px;max-width:650px;color:#46545a;margin:0 0 30px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;
+      border:1px solid var(--accent-dark);
+    }
+    .btn.primary{background:var(--accent-dark);color:var(--white)}
+    .btn.secondary{background:transparent;color:var(--accent-dark)}
+    .profile{
+      background:var(--white);border:1px solid var(--line);border-radius:30px;
+      padding:34px;box-shadow:var(--shadow);
+    }
+    .profile .circle{
+      width:94px;height:94px;border-radius:50%;background:var(--soft);
+      display:flex;align-items:center;justify-content:center;
+      font-family:Georgia,serif;font-size:30px;color:var(--accent-dark);margin-bottom:22px;
+    }
+    .profile h2{font-size:30px;margin:0 0 8px}
+    .profile p{color:var(--muted);margin:5px 0}
+    .location{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:14px}
+    section{padding:82px 0}
+    .section-head{max-width:720px;margin-bottom:38px}
+    h2{font-size:clamp(34px,4vw,50px);margin:0 0 16px}
+    .section-head p{color:var(--muted);font-size:18px;margin:0}
+    .intro{
+      display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;
+    }
+    .quote{
+      padding:32px;background:var(--cream);border-left:4px solid var(--accent);
+      border-radius:0 var(--radius) var(--radius) 0;font-family:Georgia,serif;font-size:24px;
+    }
+    .cards{
+      display:grid;grid-template-columns:repeat(2,1fr);gap:18px;
+    }
+    .card{
+      padding:28px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+    }
+    .card .num{font-size:12px;color:var(--accent-dark);font-weight:700;letter-spacing:.1em}
+    .card h3{font-size:26px;margin:10px 0 10px}
+    .card p{color:var(--muted);margin:0}
+    .longevity{
+      background:var(--ink);color:var(--white);
+    }
+    .longevity .section-head p{color:#cbd2d4}
+    .longevity .quote{background:rgba(255,255,255,.07);border-left-color:#caa88f}
+    .about{
+      display:grid;grid-template-columns:.75fr 1.25fr;gap:60px;align-items:start;
+    }
+    .portrait-img{
+      width:100%;
+      height:100%;
+      min-height:390px;
+      max-height:480px;
+      object-fit:cover;
+      object-position:center top;
+      border-radius:30px;
+      box-shadow:var(--shadow);
+    }  
+    .about p{font-size:18px;color:#4f5c61}
+    .details{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+    .detail{padding:18px;background:var(--cream);border-radius:16px;font-size:14px}
+
+    /* Estilos Preguntas Frecuentes */
+    .faq-item {
+      background: var(--white);
+      padding: 22px 26px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      margin-bottom: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .faq-item summary {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--ink);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: "+";
+      font-size: 22px;
+      color: var(--accent-dark);
+      font-weight: 400;
+    }
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+    .faq-item p {
+      margin-top: 14px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .cta{
+      padding:72px 0;background:var(--soft);
+    }
+    .cta-box{
+      background:var(--white);border:1px solid var(--line);border-radius:30px;padding:48px;
+      display:flex;align-items:center;justify-content:space-between;gap:30px;box-shadow:var(--shadow)
+    }
+    .cta h2{font-size:40px}
+
+    /* Footer con padding inferior ajustado */
+    footer{
+      padding:36px 0 90px;
+      border-top:1px solid var(--line);
+      font-size:13px;
+      color:var(--muted);
+    }
+    .footer-flex{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+    /* Estilos Redes Sociales */
+    .social-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .social-links a {
+      color: var(--muted);
+      transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-flex;
+    }
+    .social-links a:hover {
+      color: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    /* Botón flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25d366;
+      color: #ffffff;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+
+    @media(max-width:800px){
+      .nav {
+        flex-direction: column;
+        padding: 16px 0;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        font-size: 13px;
+      }
+      .hero-grid,.intro,.about{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .hero{padding-top:40px}
+      .cta-box{display:block}
+      .cta-box .buttons{margin-top:24px}
+      
+      /* Ajuste responsive para que las redes queden libres de WhatsApp */
+      .footer-flex{
+        flex-direction:column;
+        align-items:flex-start;
+        gap: 18px;
+      }
+      .social-links {
+        margin-top: 4px;
+      }
+      .whatsapp-float {
+        bottom: 18px;
+        right: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Mariana Temporelli</div>
+    <nav>
+      <a href="#planificacion">Planificación</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Derecho Previsional · Bahía Blanca</div>
+        <h1>Mariana <span>Temporelli</span></h1>
+        <p class="lead">
+          Abogada especialista en Derecho Previsional. Te ayudo a entender tu situación,
+          anticipar decisiones y planificar tu jubilación con información clara y personalizada.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#contacto">Solicitar una consulta</a>
+          <a class="btn secondary" href="#planificacion">Conocer la planificación</a>
+        </div>
+      </div>
+
+      <aside class="profile">
+        <div class="circle">MT</div>
+        <h2>Planificación y Gestión jubilatoria</h2>
+        <p>Antes de jubilarte, hay decisiones que conviene tomar con tiempo.</p>
+        <div class="location">
+          <strong>📍 Viamonte 210. Bahía Blanca</strong><br>
+          Atención profesional en Rodríguez &amp; Asociados.
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="planificacion">
+    <div class="wrap intro">
+      <div>
+        <div class="eyebrow">Planificar antes</div>
+        <h2>Tu jubilación no empieza el día que la solicitás.</h2>
+        <p>
+          Una buena planificación permite conocer dónde estás hoy, qué te falta,
+          qué alternativas tenés y qué decisiones pueden influir en tu futuro previsional.
+        </p>
+        <p>
+          La idea no es esperar a cumplir la edad para empezar a preguntar.
+          Es contar con información suficiente para decidir con anticipación.
+        </p>
+      </div>
+      <div class="quote">
+        “La jubilación no debería ser el momento de empezar a planificar,
+        sino el resultado de decisiones tomadas con anticipación.”
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" style="background:#faf8f4">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Cómo puedo ayudarte</div>
+        <h2>Una mirada previsional antes, durante y después de la jubilación.</h2>
+        <p>El asesoramiento se adapta a tu situación y al momento en el que te encontrás.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="num">01 · PLANIFICACIÓN</div>
+          <h3>Planificación jubilatoria</h3>
+          <p>Análisis de tu situación previsional, historia laboral, posibilidad de utilizar moratorias, alternativas y decisiones que conviene evaluar antes de jubilarte.</p>
+        </article>
+
+        <article class="card">
+          <div class="num">02 · ANÁLISIS DEL HABER FUTURO</div>
+          <h3>Determinación del haber</h3>
+          <p>Revisión de lo que aportaste para determinar qué conviene hacer para que recibas el mejor haber posible.</p>
+        </article>
+
+        <article class="card">
+          <div class="num">03 · TRÁMITES</div>
+          <h3>Jubilaciones y pensiones</h3>
+          <p>Asesoramiento y gestión de trámites previsionales, con acompañamiento en las distintas etapas.</p>
+        </article>
+
+        <article class="card">
+          <div class="num">04 · HABERES</div>
+          <h3>Reclamos contra ANSES</h3>
+          <p>Análisis del haber y evaluación de posibles reclamos por descuentos mal realizados. Solicitud de Reajustes. Reclamos por beneficios denegados.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="longevity">
+    <div class="wrap intro">
+      <div>
+        <div class="eyebrow" style="color:#d6b39a">Nueva longevidad</div>
+        <h2>Planificar la jubilación también es planificar lo que viene después.</h2>
+        <p>
+          Vivimos más y eso transforma la manera de pensar el futuro.
+          Por eso, además de la cuestión previsional, existen decisiones legales
+          que pueden ser importantes para una etapa de mayor longevidad.
+        </p>
+      </div>
+      <div class="quote">
+        La nueva longevidad necesita nuevas preguntas. Y también nuevas herramientas legales.
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="wrap about">
+      <img src="marianatempo.png" alt="Mariana Temporelli - Abogada Previsional" class="portrait-img">
+      <div>
+        <div class="eyebrow">Sobre mí</div>
+        <h2>Una mirada previsional basada en anticiparse.</h2>
+        <p>
+          Soy Mariana Temporelli, abogada especializada en Derecho Previsional.
+          Desde hace casi 20 años desarrollo mi actividad profesional en Rodríguez &amp; Asociados, un estudio especializado en derecho previsional con mas de 35 años de trayectoria en la materia.
+        </p>
+        <p>
+          Mi trabajo se desarrolla en dos ejes: por un lado, la planificación jubilatoria y por el otro la gestión de trámites.
+          A través de la planificación ayudo a las personas a comprender su situación previsional, evaluar alternativas
+          y tomar decisiones con información y anticipación.
+          Con la gestión de trámites garantizo que el expediente transite en forma ordenada y eficiente generandose el mejor haber posible con lo aportado.
+        </p>
+        <div class="details">
+          <div class="detail"><strong>Especialidad</strong><br>Derecho Previsional</div>
+          <div class="detail"><strong>Ubicación</strong><br>Bahía Blanca</div>
+          <div class="detail"><strong>Atención</strong><br>Rodríguez &amp; Asociados</div>
+          <div class="detail"><strong>Enfoque</strong><br>Planificación y gestión</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Preguntas Frecuentes -->
+  <section id="faq" style="background:#faf8f4">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Preguntas frecuentes</div>
+        <h2>Dudas habituales sobre la planificación jubilatoria</h2>
+        <p>Respuestas claras a las consultas más comunes antes de iniciar el trámite.</p>
+      </div>
+
+      <div style="max-width:850px;">
+        <details class="faq-item">
+          <summary>¿Con cuánta anticipación conviene empezar a planificar la jubilación?</summary>
+          <p>Lo ideal es hacer una primera consulta a los 50 (mujeres) y 55 (hombres) años. Esto permite revisar la historia laboral, los períodos insalubres/especiales, ubicar certificaciones de servicios antiguas y evaluar si es necesario realizar moratorias o aportes adicionales sin apuros.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Qué ocurre si me faltan años de aportes?</summary>
+          <p>Evaluamos las alternativas legales vigentes, como la aplicación de moratorias previsionales o la regularización de períodos adeudados como independiente, para alcanzar los años exigidos de la forma más conveniente.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Para qué sirve hacer una determinación del haber antes de jubilarse?</summary>
+          <p>Porque el haber inicial depende directamente de los mejores sueldos o aportes de los últimos años. Conocer esta información antes de alcanzar la edad jubilatoria permite tomar decisiones que optimicen el monto final que vas a cobrar.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Puedo consultar aunque falten varios años para jubilarme?</summary>
+          <p>Sí, de hecho es lo más recomendable. La planificación previsional busca precisamente anticiparse, elaborar estrategias y evitar sorpresas o demoras al momento de gestionar el beneficio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="cta">
+    <div class="wrap">
+      <div class="cta-box">
+        <div>
+          <div class="eyebrow">Primer paso</div>
+          <h2>¿Querés saber dónde estás hoy o iniciar tu trámite jubilatorio?</h2>
+          <p style="color:var(--muted);max-width:600px">
+            Una consulta de planificación puede ayudarte a conocer tu situación
+            y definir qué conviene hacer a partir de ahora.<br><br>
+            Un trámite organizado puede ahorrarte tiempo y asegurar que el beneficio sea el que corresponde a todo lo que aportaste.
+          </p>
+        </div>
+        <div class="buttons">
+          <a class="btn primary" href="https://wa.me/5492914026627" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          <a class="btn secondary" href="tel:+542914026627">Llamar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-flex">
+    <div>
+      <strong>Mariana Temporelli</strong> · Abogada especialista en Derecho Previsional<br>
+      Bahía Blanca · Viamonte 210 · Rodríguez &amp; Asociados
+    </div>
+    <div class="social-links">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/marianatemporelli_abogada" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/mariana-temporelli-065697161/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+        </svg>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/marianatemporelli.espaciolegal" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/5492914026627" class="whatsapp-float" target="_blank" rel="noopener">
+  💬 Consultar por WhatsApp
+</a>
+
+</body>
+</html>
